@@ -244,23 +244,25 @@
         }
         
     </script>
-    <audio id="myAudio">
+    <audio id="myAudio" autoplay loop>
         <source src="./audio/bs2.mp3" type="audio/mpeg">
-        Your browser does not support the audio element.
-      </audio>
+    </audio>
 
     <script>
-        var x = document.getElementById("myAudio");
-        enableAutoplay()
-        function enableAutoplay() { 
-          x.autoplay = true;
-          x.load();
+        let audioPlayer = document.getElementById('myAudio');
+        if (audioPlayer) {
+            let playAttempt = setInterval(() => {
+                document.getElementById('myAudio').play()
+                .then(() => {
+                    clearInterval(playAttempt);
+                })
+                .catch(error => {});
+            }, 3000);
         }
-         
-        function disableAutoplay() { 
-          x.autoplay = false;
-          x.load();
-        } 
+
+        document.body.addEventListener('click', () => {
+            document.getElementById('myAudio').play()
+        })
         </script> 
 </body>
 </html>
