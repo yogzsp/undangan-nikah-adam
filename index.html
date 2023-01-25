@@ -244,6 +244,23 @@
         }
         
     </script>
-    <audio src="./audio/bs2.mp3" autoplay></audio>
+    <audio id="myAudio">
+        <source src="./audio/bs2.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+
+    <script>
+        var x = document.getElementById("myAudio");
+        enableAutoplay()
+        function enableAutoplay() { 
+          x.autoplay = true;
+          x.load();
+        }
+         
+        function disableAutoplay() { 
+          x.autoplay = false;
+          x.load();
+        } 
+        </script> 
 </body>
 </html>
