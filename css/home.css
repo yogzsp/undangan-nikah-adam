@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
+*{
+    font-family: 'Poppins',sans-serif;
+}
+.bg-header{
+    position: absolute;
+    opacity: 0.5;
+    background-image: url("../images/bg-1.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 120%;
+    z-index: -1;
+}
+.form-daftar{
+    top: 15%;
+    width: 55%;
+    text-align: center;
+}
+.form-daftar h1{
+    font-size: 2.9rem;
+    font-weight: 700;
+    font-family: 'Poppins',sans-serif;
+}
+.form-daftar h3{
+    font-size: 1.5rem;
+    font-weight: 400;
+    font-family: 'Poppins',sans-serif;
+}
+.form-daftar p{
+    margin-top: 2rem;
+}
+.find-email{
+    position: relative;
+    left: 10%;
+}
+.find-email .input-field{
+    float: left;
+    width: 60%;
+}
+.find-email .button-form{
+    float: left;
+    padding: 14.5px;
+    height: 4rem;
+    font-size: 1.7rem;
+    width: 18%;
+    border: none;
+    background-color: red;
+    color: white;
+    font-family: sans-serif;
+
+}
+
+.bg-review{
+    overflow: hidden;
+}
+.bg-review .bg-gambar{
+    position: absolute;
+}
+.bg-review .bg-gambar img{
+    width: 520px;
+}
+.bg-review .bg-video video{
+    width: 520px;
+}
+
+.note-review{
+    margin-top: 20%;
+}
+.note-review h1{
+    font-size: 2.5rem;
+}
+.note-review p{
+    font-size: 1.4rem;
+}
+
+
+.help-form{
+    padding-bottom: 5rem;
+}
+.help-containt{
+    margin-top: 10px;
+}
+.help-list{
+    text-align: left;
+}
+.help-name{
+    font-size: 1.5rem;
+    width: 100%;
+    font-weight: normal !important;
+    background-color: #303030;
+    padding: 20px;
+}
+.help-info{
+    margin-top: 2px;
+    font-size: 1.5rem;
+    width: 100%;
+    font-weight: normal !important;
+    background-color: #303030;
+    padding: 20px;
+}
+
+
+
+/* bagian login */
+.form-account{
+    top: 5%;
+    padding-top: 40px;
+    padding-bottom: 100px;
+    padding-left: 50px;
+    padding-right: 50px;
+    width: 20%;
+}
+.form-account h1{
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.form-account .input-field-c{
+    margin-top: 15px;
+    width: 100%;
+    border-radius: 5px;
+    background-color: #303030;
+    height: 2.5rem !important;
+}
+.form-account .input-field-c div{
+    font-size: 15px;
+    left: 3.5%;
+}
+.form-account .input-field-c > input{
+    top: 40% !important;
+    color: white !important;
+}
+
+.sossial-link-light div i{
+    color: gray;
+}

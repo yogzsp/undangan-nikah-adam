@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Satisfy&family=Dancing+Script&display=swap');
+*{
+    font-family: 'Poppins',sans-serif;
+}
+.bghijau{
+    background-color: #775243;
+}
+.hijau{
+    color: #775243;
+}
+.tombol{
+    background-color: #775243; color:white; border:none;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+.hide{
+    display: none;
+}
+.bg-circle > .profile{
+    position: absolute;
+    left: 15%;
+    top: 17%;
+    border-radius: 50%;
+    width: 72%;
+}
+.tombol-pilihan > div{
+}
+.content{
+    padding-top: 32%;
+}
+.Informasi{
+    color: #775243;
+}
+.f-satis{
+    font-family: 'Dancing Script', cursive;
+}
+.Judul{
+    width: 100%;
+    text-align: center;
+    font-size:3.5vh;
+}
+.bg-circle > .border-profile{
+    width:99%;
+    left: 1.2%;
+    top: 1%;
+    position: absolute;
+    -webkit-animation: rotating 60s linear infinite;
+}
+.foto-content{
+    /* background-image: url("../img/border.png"); */
+}
+.nav-brand{
+    margin-right: 3rem;
+}
+
+/* .header-content{
+    height: 95%;
+} */
+.header-desc{
+    top: 25%;
+}
+.info-film{
+    width: 40%;
+    text-align: justify;
+    font-size: 17px;
+}
+.info-film .logo-film > img{
+    width: 95%;
+}
+.preview-film{
+    margin-top: 1.5rem;
+}
+.list-header{
+    top: 33%;
+}
+
+
+.list-content{
+    padding-top: 8rem;
+    padding-bottom: 5rem;
+}
+.list-page{
+    height: 10rem;
+    width: 100%px;
+}
+.list-film{
+    margin-bottom: 1rem;
+}
+
+
+.next-list{
+    top: 20%;
+    right: 0%;
+    color: white;
+    font-size: 5rem;
+    position: absolute;
+    width: 4.25rem;
+    height: 10rem;
+    z-index: 1;
+    background-color: rgb(20, 20, 20,0.8);
+    filter: opacity(0);
+    transition: 0.5s;
+}
+.next-list i{
+    position: relative;
+    top:15%;
+}
+.next-list:hover{
+    filter: opacity(1);
+    transition: 0.5s;
+}
+
+.back-list{
+    top: 20%;
+    left: 0%;
+    color: white;
+    font-size: 5rem;
+    position: absolute;
+    width: 4.25rem;
+    height: 10rem;
+    z-index: 1;
+    background-color: rgb(20, 20, 20,0.8);
+    filter: opacity(0);
+    transition: 0.5s;
+}
+.back-list i{
+    position: relative;
+    top:15%;
+}
+.back-list:hover{
+    filter: opacity(1);
+    transition: 0.5s;
+}
+
+
+.list-tipe .tipe-name{
+    font-size: 20px;
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+.list-tipe .show-all, .list-tipe .show-all-icon{
+    color: #54b9c5;
+    font-weight: bold;
+    filter: opacity(0);
+    transition: 0.5s;
+}
+.list-tipe:hover .show-all-icon{
+    filter: opacity(1);
+    transition: 0.5s;
+}
+.show-all{
+    z-index: 1;
+    padding-top: 5px;
+    padding-left: 20px;
+    transition: 1s;
+}
+.icon-show{
+    top: 0%;
+    left: 0%;
+    position: absolute;
+    transition: 1s;
+}
+
+.show-all:hover + .icon-show{
+    top: 15%;
+    font-size: 15px;
+    left: 17%;
+    transition: 1s;
+}
+
+.show-all:hover{
+    width: fit-content;
+    filter: opacity(1);
+    transition: 1s;
+}
+
+.sossial-link > div{
+    text-align: center;
+}
+.sossial-link div i{
+    padding: 15px;
+    color: white;
+    font-size: 1.5rem;
+}
+
+.member-list{
+    display: flex;
+}
+.member-list div{
+    width: 100%;
+}
+.member-list div ul li{
+    list-style: none;
+    margin-bottom: 5px;
+    font-size: 12px;
+}
+
+.member-list div ul li a{
+    color:gray;
+    text-decoration: none;
+}
+.member-list div ul li a:hover{
+    color:gray;
+    text-decoration: underline;
+}
+.tombol-layanan{
+    color: gray;
+    margin-top: 15px;
+    border-radius: 2px;
+    font-size: 12px;
+    padding: 0.2rem 0.5rem 0.2rem 0.5rem;
+}
+.tombol-layanan:hover{
+    color:white;
+}
+.copyright{
+    margin-top: 15px;
+    font-size: 12px;
+}

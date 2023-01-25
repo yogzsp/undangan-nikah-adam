@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Undangan untuk Anda</title>
+    <link href="./css/desktop.css" rel="stylesheet">
+    <link href="./css/home.css" rel="stylesheet">
+    <link href="./css/style.css" rel="stylesheet">
+    <link href="./font/css/all.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+    <div class="full-p CoverSurat abs">
+        <div class="w-mobile hijau" style="overflow: hidden;z-index: 2;">
+            <div class="bg-fit content rel full-h" style="background-image: url('./img/bg11.webp');">
+                <div class="Judul f-satis">
+                    AKAD NIKAH
+                </div>
+                <div class="foto-content bg-circle center-rel" style="width: 270px;height: 270px;">                
+                    <img src="./img/kami.jpg" class="profile">
+                    <img src="./img/borderbaru.png" class="border-profile">
+                </div>
+                <div class="Informasi full-w text-center">
+                    <div class="informasi-acara" style="font-size: 1.5vh;">
+                        Kamis, 26 Januari 2023
+                    </div>
+                    <div class="informasi-nama" style="margin-top: 10px;font-size: 1.5vh;">
+                        Kepada Bapak/Ibu/Saudara/i
+                        <br/> 
+                        <span style="font-size: 2.5vh;line-height: 40px;font-weight: bold;" id="namaUser">
+                        </span>
+                        <br/>
+                        Mohon maaf apabila ada kesalahan dalam <br/>penulisan nama/gelar
+                    </div>
+                    <button class="tombol" onclick="hilangkan('.CoverSurat'), tampilkan('.hide')" style="margin-top: 10px;">Buka Undangan</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="w-mobile hide halaman2">
+        <div class="surat bg-fit rel full-h" style="background-image: url('./img/bg11.webp');padding-top: 5%;">
+            <div class="header-surat full-w text-center block" >
+                <img src="./img/bismillah.png" width="40%"/>
+                <div style="font-size:15px;font-weight:bold;width:70%;line-height: 20px;margin-top: 10px;" class="center-rel">
+                    Assalamu'alaikum Warahmatullahi Wabarakatuh
+                </div>
+            </div>
+            <div class="isi-surat" style="margin-top: 5px;">
+                <div class="isi-pembuka text-center center-rel" style="width: 85%; font-size: 12px;">
+                    Puji syukur kami hanturkan kepada Allah SWT yang telah melimpahkan rahmat dan hidayahnya kepada kita semua. Sholawat serta salam kita sanjungkan kepada Nabi Muhammad SAW.
+                    <br>
+                    Bersama ini kami mengharapkan kehadiran Bapak/Ibu/Saudara/i untuk menghadiri acara Syukuran atas dilangsungkannya akad pernikahan kami :
+                </div>
+                <div class="profile-surat">
+                    <div class="nama-profile full-w text-center" style="margin-top: 10px;">
+                        <span style="font-size: 25px;" class="f-satis">Adam Naufal Dzakwan</span>
+                        <br/>
+                        <span style="font-size: 12px;">
+                            Putra kedua dari
+                            <br/>
+                            Alm. Bpk Sudirahman & Ibu Nuriati
+                        </span>
+                    </div>
+                    <br>
+                    <div class="foto-content bg-circle center-rel" style="width: 170px;height: 170px;">                
+                        <img src="./img/kami.jpg" class="profile">
+                        <img src="./img/borderbaru.png" class="border-profile">
+                    </div>
+                    <br>
+                    <div class="nama-profile full-w text-center">
+                        <span style="font-size: 25px;" class="f-satis">Prisma</span>
+                        <br/>
+                        <span style="font-size: 12px;">
+                            Putri kedua dari
+                            <br/>
+                            Bpk. Karyamin Isnandar & Ibu Sukmaeni
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="w-mobile hide halaman3">
+        <div class="jadwal bg-fit rel full-h" style="background-image: url('./img/bg11.webp');padding-top: 35%;">
+            <div class="jadwal-pelaksanaan center-rel text-center" style="width: 92%;font-size: 15px;">
+                Bersama dengan ini kami memohon dengan hormat kepada Bapak/Ibu/Saudara/i sekalian untuk dapat hadir dalam acara Akad Nikah kami, yang insyaallah akan diselenggarakan pada :
+            </div>
+            <div class="waktu center-rel text-center hijau" style="margin: 40px 5px;line-height: 30px;">
+                <span style="font-weight: bold;">Kamis, 26 Januari 2023</span>
+                <br/>
+                10.30 - Selesai
+                <div class="hitung-mundur center-rel text-center hijau" style="font-weight: bold;margin-top: 20px;">
+                    <p id="jam-mundur"></p>
+                    <script>
+                        // Mengatur waktu akhir perhitungan mundur
+                        var countDownDate = new Date("Jan 26, 2023 16:30:00").getTime();
+        
+                        // Memperbarui hitungan mundur setiap 1 detik
+                        var x = setInterval(function() {
+        
+                        // Untuk mendapatkan tanggal dan waktu hari ini
+                        var now = new Date().getTime();
+                            
+                        // Temukan jarak antara sekarang dan tanggal hitung mundur
+                        var distance = countDownDate - now;
+                            
+                        // Perhitungan waktu untuk hari, jam, menit dan detik
+                        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+                            
+                        // Keluarkan hasil dalam elemen dengan id = "demo"
+                        document.getElementById("jam-mundur").innerHTML = days + " hari " + hours + " jam "
+                        + minutes + " menit " + seconds + " detik ";
+                            
+                        // Jika hitungan mundur selesai, tulis beberapa teks 
+                        if (distance < 0) {
+                            clearInterval(x);
+                            document.getElementById("jam-mundur").innerHTML = "Acara sudah terlaksana";
+                        }
+                        }, 1000);
+                    </script>
+                </div>
+            </div>
+            <div class="penutup center-rel text-center" style="width: 92%;font-size: 15px;">
+                Tanpa mengurangi rasa hormat, sehubung dengan kondisi pandemi mohon agar tetap menerapkan dan mematuhi protokol kesehatan, Semoga tidak mengurangi nilai silaturahmi yang hendak disampaikan.
+                <br/>
+                <br/>
+                <a href="#"><img border="0"><button class="tombol" style="margin-top: 10px;">Tambah ke Kalender</button></a>
+            </div>
+        </div>
+    </div>
+    <div class="w-mobile hide halaman4">
+        <div class="jadwal bg-fit rel full-h" style="background-image: url('./img/bg11.webp');padding-top: 25%;">
+            <div class="hijau text-center" style="font-weight: bold;font-size:20px;">
+                <u>Lokasi Acara</u>
+            </div>
+            <div class="Map center-rel" style="width: 80%;font-size: 15px; margin-top: 40px;">
+                Karang Bayan Kecamatan Lingsar (Rumah Mempelai Pria)
+                <br/>
+                <br/>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63132.37805604785!2d116.15576189599122!3d-8.521345881688678!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dcdc65d945f355b%3A0x1ff6d29081c0e57e!2sKarang%20Bayan%2C%20Kec.%20Lingsar%2C%20Kabupaten%20Lombok%20Barat%2C%20Nusa%20Tenggara%20Bar.!5e0!3m2!1sid!2sid!4v1674654794225!5m2!1sid!2sid" width="100%" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- button -->
+    <div class="w-mobile hide halaman5">
+        <div class="jadwal bg-fit rel full-h" style="background-image: url('./img/bg11.webp');padding-top: 30%;">
+            <div class="hijau text-center" style="font-weight: bold;font-size:20px;"><u>Foto Bersama Aisya Fani</u></div>
+            <div class="slide-foto center-rel" style="width: 55%;margin-top: 20px;" >
+                <div class="slideshow-container">
+                    <div class="mySlides fade">
+                      <img src="./img/p1.jpg" style="width:100%">
+                    </div>
+                    
+                    <div class="mySlides fade">
+                        <img src="./img/p2.jpg" style="width:100%">
+                      </div>
+                    
+                      <div class="mySlides fade">
+                        <img src="./img/p3.jpg" style="width:100%">
+                      </div>
+
+                      <div class="mySlides fade">
+                        <img src="./img/p4.jpg" style="width:100%">
+                      </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="w-mobile hide halaman6">
+        <div class="jadwal bg-fit rel full-h" style="background-image: url('./img/bg11.webp');padding-top: 60%;">
+            <div class="center-rel text-center" style="width: 92%;font-size: 15px;">
+                Kami yang berbahagia
+            </div>
+            <div class="center-rel text-center hijau f-satis" style="margin: 80px 5px;line-height: 30px;font-size: 30px;">
+                Adam Naufal Dzakwan
+                <br/>
+                &
+                <br/>
+                Prisma
+            </div>
+            <div class="penutup center-rel text-center" style="width: 92%;font-size: 15px;">
+                Atas kehadiran dan doa restu dari Bapak/Ibu/Saudara/i sekian, Kami mengucapkan terimakasih
+            </div>
+        </div>
+    </div>
+
+
+    <div class="button fix-b full-w">
+        <div class="contain center-rel bghijau" style="width: 65%;padding: 10px 20px; max-width:500px;color:white;border-radius: 10px;margin-bottom: 10px;">
+            <div class="tombol-pilihan flexbox-x-bw">
+                <div>
+                    <i class="fa-solid fa-house" onclick="Geser(0)"></i>
+                </div>
+                <div>
+                    <i class="fa-solid fa-clock" onclick="Geser(771)"></i>
+                </div>
+                <div>
+                    <i class="fa-solid fa-location-dot" onclick="Geser(1490)"></i>
+                </div>
+                <div>
+                    <i class="fa-solid fa-image" onclick="Geser(2352)"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./js/hide.js"></script>
+    <script src="./js/position.js"></script>
+    <script src="./js/scroll.js"></script>
+    <script>
+        let slideIndex = 0;
+        getNama();
+        showSlides();
+        
+        function showSlides() {
+          let i;
+          let slides = document.getElementsByClassName("mySlides");
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+          }
+          slideIndex++;
+          if (slideIndex > slides.length) {slideIndex = 1}    
+          
+          slides[slideIndex-1].style.display = "block";  
+          setTimeout(showSlides, 3000); // Change image every 2 seconds
+        }
+
+        async function getNama(){
+            const queryString = window.location.search;
+            const urlParams = new URLSearchParams(queryString);
+            const namaUser = urlParams.get('nama');
+            const test = document.getElementById("namaUser").innerHTML = namaUser;
+            console.log(namaUser);
+            // alert(product);
+        }
+        
+    </script>
+    <audio src="./audio/bs2.mp3" autoplay></audio>
+</body>
+</html>
